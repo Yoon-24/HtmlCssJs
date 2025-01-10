@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table 기본 -->
+    <table>
+        <caption>태그로 만든 표</caption>
+        <tr>
+            <th>번호</th>
+            <th>상품명</th>
+            <th>수량</th>
+            <th>가격</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>콜라</td>
+            <td>1개</td>
+            <td>1,500원</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>사이다</td>
+            <td>2개</td>
+            <td>1,000원</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>탄산수</td>
+            <td>3개</td>
+            <td>1,000원</td>
+        </tr>
+    </table>
+    
+    <!-- rowspan, colspan -->
+    <table>
+        <caption>예제</caption>
+        <tr>
+            <th>번호</th>
+            <th>상품명</th>
+            <th>수량</th>
+            <th>가격</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>콜라</td>
+            <td>1개</td>
+            <td>1,500원</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>사이다</td>
+            <td>2개</td>
+            <td rowspan="2">1,000원</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>탄산수</td>
+            <td>3개</td>
+        </tr>
+        <tr>
+            <td>총 금액</td>
+            <td colspan="3">6,500원</td>
+        </tr>
+    </table>
+
+    <!-- thead, tfoot, tbody -->
+    <table>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>        
+        </thead>
+        <tfoot>
+            <tr>
+                <td>총 금액</td>
+                <td colspan="3">6,500원</td>
+           </tr>         
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>coke</td>
+                <td>1</td>
+                <td>1,500</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>cider</td>
+                <td>2</td>
+                <td rowspan="2">1,000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>sparkling</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- col, colgroup -->
+    <table>
+        <caption>예제 col</caption>
+
+        <col style="width: 80px;">
+        <colgroup span="2" style="width: 120px;"></colgroup>
+        <col style="width: 100px;">
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>콜라</td>
+                <td>1개</td>
+                <td>1,500원</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>사이다</td>
+                <td>2개</td>
+                <td colspan="2">1,000원</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>웰치스</td>
+                <td>3개</td>
+            </tr>
+
+            <tr>
+                <td>총 금액</td>
+                <td rowspan="3">6,500원</td>
+            </tr>
+    </table>
+
+    <!-- audio 태그 -->
+    <!-- 웹 브라우저 노출x -->
+    <audio src="#">controls 없음</audio> 
+    <!-- 웹 브라우저 노출 o -->
+    <audio src="#" controls>controls 있음</audio>
+
+    <!-- video 태그 -->
+    <!-- 웹 브라우저 노출x -->
+    <video src="#">controls 없음</video>
+    <!-- 웹 브라우저 노출o -->
+    <video src="#" controls>controls 있음</video>
+
+    <!-- source 태그 -->
+     <audio controls>
+        <source src="#" type="audio/wav">
+        <source src="#" type="audio/mp3">
+        지원하지 않는 웹 브라우저입니다.
+     </audio>
+
+</body>
+</html>
