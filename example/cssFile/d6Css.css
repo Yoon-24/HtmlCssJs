@@ -1,0 +1,118 @@
+/* 전체 선택자 */
+/* * { background-color: beige;} */
+
+/* 태그 선택자 */
+/* span{
+    color: violet;
+} */
+
+/* id 선택자 */
+/* #main{
+    color: yellowgreen;
+} */
+
+/* 클래스 선택자 */
+/* .t1{
+    color: red;
+} */
+
+/* 기본 속성 선택자 */
+/* [title]{
+    color: blue;
+}
+
+[title=name]{
+    color: aqua;
+}
+
+#mainly[title]{
+    color: aquamarine;
+} */
+
+
+/* 조합 선택자 사용 */
+/* 그룹 선택자 */
+/* p, span{
+    color: red;
+} */
+
+/* 자식 선택자 */
+/* div > p{
+    color: orange;
+} */
+
+/* 하위 선택자 */
+/* div span{
+    color: yellow;
+} */
+
+/* 인접 형제 선택자 */
+/* h1+h2{
+    color: green;
+} */
+
+/* 일반 형제 선택자 */
+/* h1~p{
+    color: blue;
+} */
+
+/* 가상 요소 선택자 */
+/* p::before{
+    content: '<before>';
+    color: orange;
+}
+
+p{
+    color: deeppink;
+}
+
+p::after{
+    content: '<after>';
+} */
+
+/* 링크 가상 클래스 선택자 */
+/* a:link{
+    color: red;
+}
+
+a:visited{
+    color: blue;
+} */
+
+/*  동적 가상 클래스 선택자 */
+/* p:hover{
+    background-color: beige;
+    color: blue;
+}
+
+p:active{
+    color: red;
+} */
+
+/*  */
+
+/* 입력 요소 가상 클래스 선택자 */
+/* input:focus{
+    text-align: center;
+}
+
+input:checked+label{
+    color: red;
+}
+
+input:disabled+label{
+    color: blue;
+}
+
+textarea:enabled{
+    color: green;
+} */
+
+/* 구조적 가상 클래스 선택자 */
+li:first-child{
+    color: greenyellow;
+}
+
+li:last-child{
+    color: yellow;
+}
